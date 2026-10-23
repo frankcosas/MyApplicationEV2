@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#0F172A">
+
+    <!-- Título Principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚨 Panel de Monitoreo IoT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#F8FAFC"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tarjeta de Estado General y Sensores -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:elevation="6dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvEstadoAlarma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado: Sincronizando..."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:layout_marginBottom="6dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CBD5E1"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/tvSensorMagnetico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚪 Sensor Puerta: Cerrada"
+            android:textSize="13sp"
+            android:textColor="#334155"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/tvSensorInfrarrojo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔴 Sensor Infrarrojo: Apagado"
+            android:textSize="13sp"
+            android:textColor="#334155"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Control de Distancia del Infrarrojo -->
+        <TextView
+            android:id="@+id/tvDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📏 Distancia IR: 0 metros (Umbral > 5m)"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#0EA5E9"
+            android:layout_marginBottom="4dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="0"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+
+    <!-- Botón para Armar / Desarmar el Sistema -->
+    <Button
+        android:id="@+id/btnToggleArmado"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Cambiar Estado: Armar/Desarmar"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0EA5E9"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Botón para Simular Apertura de Puerta -->
+    <Button
+        android:id="@+id/btnSimularPuerta"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="🚪 Simular Apertura de Puerta"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D97706"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Botón para Simular Movimiento -->
+    <Button
+        android:id="@+id/btnSimularIntruso"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="⚠️ Simular Movimiento (Infrarrojo)"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#EF4444"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Espaciador flexible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Botón Cerrar Sesión -->
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Cerrar Sesión"
+        android:textSize="13sp"
+        android:textColor="#94A3B8"
+        android:backgroundTint="#1E293B"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

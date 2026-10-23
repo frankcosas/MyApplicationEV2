@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "836963207824",
+    "project_id": "alarmaantirrobo-7f6dd",
+    "storage_bucket": "alarmaantirrobo-7f6dd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836963207824:android:9b2458f07c41b7d7ef6615",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxkJNVCP-REe_OCQBFW_z60U6XQnNy-VE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#0F172A">
+
+    <!-- Icono de Seguridad -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🛡️"
+        android:textSize="52sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Título Principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguridad ATX"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#F8FAFC"
+        android:layout_marginBottom="36dp"/>
+
+    <!-- Tarjeta contenedora para los campos de texto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:elevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#0EA5E9"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#0EA5E9"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <!-- Botón de Iniciar Sesión -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Iniciar Sesión"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0EA5E9"
+        android:layout_marginBottom="12dp"
+        android:elevation="2dp"/>
+
+    <!-- Botón de Ir a Registro -->
+    <Button
+        android:id="@+id/btnIrRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Crear Nuevo Usuario"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#334155"
+        android:backgroundTint="#E2E8F0"
+        android:elevation="1dp"/>
+
+</LinearLayout>
